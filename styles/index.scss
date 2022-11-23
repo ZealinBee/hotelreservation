@@ -1,0 +1,90 @@
+@import "./variables";
+
+body {
+    overflow-x: hidden;
+}
+
+.background {
+    z-index:-1;
+    height:100vh;
+    width:100vw;
+    position:absolute;
+}
+
+.background img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.background-overlay {
+    display:block;
+    position:absolute;
+    top:0;
+    background: linear-gradient(0deg, #00000066 100%, #ffffff44 20%);
+    width:100%;
+    height:100%;
+}
+  
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+ 
+  .logo {
+    color: $light-gray;
+    font-size: 1.2rem;
+    z-index: 1;
+    margin-top: 4rem;
+    font-weight: 500;
+  }
+
+  .main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+
+    h1 {
+      color: $brand-color;
+      font-size: 1.8rem;
+      text-align: center;
+      padding-bottom: 1.2rem;
+    }
+
+    h3 {
+      color: $brand-color;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  .book-room-button {
+    z-index: 1;
+    margin-bottom: 9rem;
+    background-color: $accent-color-dark;
+    font-weight: 500;
+  }
+
+ 
+}
+
+
+@media   (min-width: 600px) {
+    .container-main {
+        .main-text {
+            h1 {
+                font-size:2rem;
+            }
+            h3 {
+                font-size:1rem;
+            }
+        }
+    }
+    
+}
