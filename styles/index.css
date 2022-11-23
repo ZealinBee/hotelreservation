@@ -84,17 +84,169 @@ body {
 
 .container-main .book-room-button {
   z-index: 1;
-  margin-bottom: 9rem;
+  margin-bottom: 15rem;
   background-color: #6EA59B;
   font-weight: 500;
 }
 
-@media (min-width: 600px) {
+.container-check-reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #78B7AB;
+  width: 100vw;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.container-check-reservation .gradient-ball {
+  position: absolute;
+  width: 728px;
+  height: 728px;
+  left: calc(60% - 728px/2 - 821px);
+  top: -200px;
+  z-index: 1;
+  background: rgba(252, 227, 138, 0.77);
+  opacity: 0.3;
+  -webkit-filter: blur(113px);
+          filter: blur(113px);
+}
+
+.container-check-reservation h2,
+.container-check-reservation h4 {
+  color: white;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+
+.container-check-reservation h2 {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.container-check-reservation h4 {
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.container-check-reservation .input-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-check-reservation .input-box-wrapper .person {
+  display: none;
+  z-index: 2;
+}
+
+.container-check-reservation .check-reservation-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #6EA59B;
+  width: 80%;
+  border-radius: 0.2rem;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-check-reservation .check-reservation-input h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.container-check-reservation .check-reservation-input input {
+  width: 80%;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.37);
+  color: white;
+  font-size: 1rem;
+}
+
+.container-check-reservation .check-reservation-input input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.52);
+  text-align: center;
+}
+
+.container-check-reservation .check-reservation-input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.52);
+  text-align: center;
+}
+
+.container-check-reservation .check-reservation-input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.52);
+  text-align: center;
+}
+
+.container-check-reservation .check-reservation-input input::placeholder {
+  color: rgba(255, 255, 255, 0.52);
+  text-align: center;
+}
+
+.container-check-reservation .check-reservation-input .reservation-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container-check-reservation .check-reservation-input .check-your-reservation-button {
+  width: 80%;
+  background: rgba(252, 227, 138, 0.69);
+  color: #F5F5F5;
+  margin-top: 1rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 800px) {
   .container-main .main-text h1 {
     font-size: 2rem;
   }
   .container-main .main-text h3 {
     font-size: 1rem;
+  }
+  .container-main .book-room-button {
+    margin-bottom: 7rem;
+  }
+  .container-check-reservation {
+    padding-bottom: 2rem;
+  }
+  .container-check-reservation h2 {
+    font-size: 1.5rem;
+  }
+  .container-check-reservation .input-box-wrapper .person {
+    display: block;
+    width: 300px;
+    margin-right: 10%;
+  }
+  .container-check-reservation .input-box-wrapper .person img {
+    width: 300px;
+  }
+  .container-check-reservation .input-box-wrapper .check-reservation-input {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=index.css.map */

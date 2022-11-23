@@ -15,14 +15,15 @@
 
     <link rel="icon" href="./images/logo.svg" />
   </head>
+
   <body>
+    <!-- This is for the background overlay  -->
     <div class="background">
         <img src="./images//background.jpg" alt="">
         <div class="background-overlay"></div>
-
     </div>
-    <main class="container container-main">
 
+    <main class="container container-main">
       <h2 class="logo">ViVas Hotel</h2>
       <div class="main-text">
         <h1>Enjoy your stay in Barcelona</h1>
@@ -30,5 +31,21 @@
       </div>
       <button class="book-room-button">Book a Room</button>
     </main>
+    <section class="container container-check-reservation">
+        <div class="gradient-ball"></div>
+        <h4>Your Reservation</h4>
+        <h2>Check or Modify the Booking</h2>
+        <div class="input-box-wrapper">
+            <div class="person">
+                <img src="./images/girl.png" alt="">
+            </div>
+            <form action="submit" class="check-reservation-input">
+                <h2>We offer you flexibility so that you can make the most out of your trip!</h2>
+                <input type="number" placeholder="Reservation Number" class="reservation-number-input">
+                <input type="Text" placeholder="Last Name" class="last-name-input">
+                <button class="check-your-reservation-button">Access your reservation</button>
+            </form>
+        </div>
+    </section>
   </body>
 </html>
