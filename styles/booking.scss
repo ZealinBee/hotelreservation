@@ -1,0 +1,115 @@
+@import "./variables";
+::-webkit-calendar-picker-indicator {
+    display:none;
+  }
+
+  h1{
+    color:$brand-color;
+    text-align: center;
+    margin-bottom:4rem;
+  }
+
+.date {
+    background-color:$accent-color-dark;
+    border-radius:5rem;
+    width:60%;
+    margin:0 auto;
+    display:flex;
+    font-size:0.9rem;
+    .calendar-icon {
+        color:$light-gray;
+        font-size:3rem;
+        background:#B7D2CD;
+        display:flex;
+        align-items: center;
+        padding:0 2rem;
+        border-radius: 5rem;
+    }
+    .date-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-left:1.5rem;
+        color:$light-gray;
+        width:100%;
+        margin-left:auto;
+        h3 {
+            margin-top:1rem
+        }
+        input {
+            margin-bottom:1rem;
+            background:transparent;
+            font-weight:700;
+            color:white;
+        }
+        & > * {
+            justify-self: center;
+            align-self:center;
+        }
+    }
+}
+
+.option-selectors{
+    position:relative;
+    display:flex;
+    background-color: $accent-color-dark;
+    justify-content:space-between;
+    width:300px;
+    border-radius: 5rem;
+    cursor: pointer;
+    .single-bed-option-wrapper {
+        background-color: $accent-color-dark;
+        border-radius: 5rem;
+        padding:1rem 3rem;
+        border:1px red solid;
+    }
+    .double-bed-option-wrapper{
+        background-color: $dark-gray;
+        border-radius: 5rem;
+        padding:1rem 3rem;
+    }
+   
+}
+
+
+.personal-details {
+    height:100vh;
+    background-color: $brand-color;
+    h2 {
+        color:$brown;
+        text-align: center;
+        padding-top:1rem;
+    }
+    .personal-details-form {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:2rem;
+        width:70%;
+        margin:0 auto;
+        margin-top:3rem;
+        .personal-detail {
+            width:380px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            input {
+                background:rgba(96, 92, 92, 0.17);
+            }
+            label {
+                color:$brown;
+                font-weight:700;
+            }
+        }
+
+    }
+    .confirm-booking-button {
+        background:$accent-color-dark;
+        border-radius:2rem;
+        font-weight: 700;
+        width:200px;
+        margin:0 auto;
+        margin-top:5rem;
+    }
+}
+

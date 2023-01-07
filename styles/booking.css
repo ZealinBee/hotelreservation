@@ -1,0 +1,110 @@
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+h1 {
+  color: #FCE38A;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.date {
+  background-color: #6EA59B;
+  border-radius: 5rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  font-size: 0.9rem;
+}
+.date .calendar-icon {
+  color: #F5F5F5;
+  font-size: 3rem;
+  background: #B7D2CD;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 5rem;
+}
+.date .date-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 1.5rem;
+  color: #F5F5F5;
+  width: 100%;
+  margin-left: auto;
+}
+.date .date-grid h3 {
+  margin-top: 1rem;
+}
+.date .date-grid input {
+  margin-bottom: 1rem;
+  background: transparent;
+  font-weight: 700;
+  color: white;
+}
+.date .date-grid > * {
+  justify-self: center;
+  align-self: center;
+}
+
+.option-selectors {
+  position: relative;
+  display: flex;
+  background-color: #6EA59B;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.option-selectors .single-bed-option-wrapper {
+  background-color: #6EA59B;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  border: 1px red solid;
+}
+.option-selectors .double-bed-option-wrapper {
+  background-color: #D9D9D9;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+}
+
+.personal-details {
+  height: 100vh;
+  background-color: #FCE38A;
+}
+.personal-details h2 {
+  color: #361D1D;
+  text-align: center;
+  padding-top: 1rem;
+}
+.personal-details .personal-details-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.personal-details .personal-details-form .personal-detail {
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-details .personal-details-form .personal-detail input {
+  background: rgba(96, 92, 92, 0.17);
+}
+.personal-details .personal-details-form .personal-detail label {
+  color: #361D1D;
+  font-weight: 700;
+}
+.personal-details .confirm-booking-button {
+  background: #6EA59B;
+  border-radius: 2rem;
+  font-weight: 700;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
