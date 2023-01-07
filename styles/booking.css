@@ -19,7 +19,7 @@ h1 {
 .date .calendar-icon {
   color: #F5F5F5;
   font-size: 3rem;
-  background: #B7D2CD;
+  background: #b7d2cd;
   display: flex;
   align-items: center;
   padding: 0 2rem;
@@ -100,11 +100,15 @@ h1 {
   color: #361D1D;
   font-weight: 700;
 }
-.personal-details .confirm-booking-button {
+.personal-details .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.personal-details .button-wrapper .confirm-booking-button {
   background: #6EA59B;
   border-radius: 2rem;
   font-weight: 700;
   width: 200px;
-  margin: 0 auto;
   margin-top: 5rem;
 }

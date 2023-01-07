@@ -63,6 +63,14 @@ body {
   margin-bottom: 15rem;
   background-color: #6EA59B;
   font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+.container-main .book-room-button a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.container-main .book-room-button:hover {
+  opacity: 0.9;
 }
 
 .container-check-reservation {
@@ -168,7 +176,7 @@ body {
     margin-bottom: 7rem;
   }
   .container-check-reservation {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
   }
   .container-check-reservation h2 {
     font-size: 1.5rem;
@@ -182,6 +190,7 @@ body {
     width: 300px;
   }
   .container-check-reservation .input-box-wrapper .check-reservation-input {
+    margin-bottom: 1rem;
     width: 40%;
   }
 }

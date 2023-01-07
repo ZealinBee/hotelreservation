@@ -68,6 +68,15 @@ body {
     margin-bottom: 15rem;
     background-color: $accent-color-dark;
     font-weight: 500;
+    transition: all 0.1s ease-in-out;
+    a {
+      text-decoration: none;
+      color:$light-gray;
+      
+    }
+    &:hover {
+      opacity:0.9;
+    }
   }
 }
 
@@ -182,7 +191,8 @@ body {
   }
 
   .container-check-reservation {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+
     h2 {
       font-size: 1.5rem;
     }
@@ -196,6 +206,7 @@ body {
         }
       }
       .check-reservation-input {
+        margin-bottom:1rem;
         width: 40%;
       }
     }

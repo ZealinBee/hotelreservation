@@ -1,0 +1,58 @@
+body {
+  background-color: #6EA59B;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+main h1 {
+  color: #FCE38A;
+  font-size: 2.7rem;
+}
+main h3 {
+  color: #F5F5F5;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+  font-weight: 600;
+}
+main h4 {
+  color: #F5F5F5;
+  font-size: 1rem;
+  position: relative;
+}
+main h4::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: #E0CA7B;
+  position: absolute;
+  left: -100px;
+  top: -110%;
+  border-radius: 100%;
+}
+main .booking-information {
+  display: flex;
+  flex-direction: column;
+}
+main .booking-information .booking-customer-details {
+  display: flex;
+  gap: 9rem;
+  margin-bottom: 5rem;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-left: 3rem;
+}
+main .booking-information .booking-room-details {
+  display: flex;
+  gap: 9rem;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 9em;
+  padding-left: 3rem;
+}
