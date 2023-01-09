@@ -37,6 +37,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .background {
   z-index: -1;
   height: 100vh;

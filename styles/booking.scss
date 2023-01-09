@@ -50,10 +50,10 @@ h1 {
 }
 
 .option-selector-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
-  margin-top:4rem;
-  margin-bottom:4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   .option-selectors {
     margin: 0 1rem;
     position: relative;
@@ -64,7 +64,7 @@ h1 {
     border-radius: 5rem;
     cursor: pointer;
     .single-bed-option,
-    .non-smoking-option{
+    .non-smoking-option {
       background-color: $accent-color-dark;
       border-radius: 5rem;
       padding: 1rem 3rem;
@@ -112,12 +112,18 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    .confirm-booking-button {
-      background: $accent-color-dark;
-      border-radius: 2rem;
-      font-weight: 700;
-      width: 200px;
-      margin-top: 5rem;
+    .confirm-booking {
+      text-decoration: none;
+
+      button {
+        background: $accent-color-dark;
+        border-radius: 2rem;
+        font-weight: 700;
+        margin-top: 5rem;
+      }
+      &:hover {
+        opacity:0.8;
+      }
     }
   }
 }

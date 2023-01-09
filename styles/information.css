@@ -18,20 +18,31 @@ main h3 {
   margin-top: 1.25rem;
   font-weight: 600;
 }
-main h4 {
+main .customer-details,
+main .room-details {
   color: #F5F5F5;
-  font-size: 1rem;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
-main h4::before {
-  content: "";
-  width: 80px;
-  height: 80px;
+main .customer-details h4,
+main .room-details h4 {
+  white-space: nowrap;
+}
+main .customer-details .circle,
+main .room-details .circle {
+  width: 75px;
+  height: 75px;
   background: #E0CA7B;
-  position: absolute;
-  left: -100px;
-  top: -110%;
   border-radius: 100%;
+  margin-right: 1rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .customer-details .circle img,
+main .room-details .circle img {
+  width: 60%;
 }
 main .booking-information {
   display: flex;
@@ -40,8 +51,6 @@ main .booking-information {
 main .booking-information .booking-customer-details {
   display: flex;
   gap: 9rem;
-  margin-bottom: 5rem;
-  width: 80%;
   justify-content: center;
   margin: 0 auto;
   margin-top: 2rem;
@@ -50,9 +59,8 @@ main .booking-information .booking-customer-details {
 main .booking-information .booking-room-details {
   display: flex;
   gap: 9rem;
-  width: 60%;
   margin: 0 auto;
   justify-content: center;
-  margin-top: 9em;
+  margin-top: 4em;
   padding-left: 3rem;
 }

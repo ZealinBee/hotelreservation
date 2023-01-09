@@ -113,10 +113,15 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.personal-details .button-wrapper .confirm-booking-button {
+.personal-details .button-wrapper .confirm-booking {
+  text-decoration: none;
+}
+.personal-details .button-wrapper .confirm-booking button {
   background: #6EA59B;
   border-radius: 2rem;
   font-weight: 700;
-  width: 200px;
   margin-top: 5rem;
+}
+.personal-details .button-wrapper .confirm-booking:hover {
+  opacity: 0.8;
 }
