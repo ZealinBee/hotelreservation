@@ -49,24 +49,32 @@ h1 {
   }
 }
 
-.option-selectors {
-  position: relative;
-  display: flex;
-  background-color: $accent-color-dark;
-  justify-content: space-between;
-  width: 300px;
-  border-radius: 5rem;
-  cursor: pointer;
-  .single-bed-option-wrapper {
+.option-selector-wrapper {
+  display:flex;
+  justify-content: center;
+  margin-top:4rem;
+  margin-bottom:4rem;
+  .option-selectors {
+    margin: 0 1rem;
+    position: relative;
+    display: flex;
     background-color: $accent-color-dark;
+    justify-content: space-between;
+    width: 270px;
     border-radius: 5rem;
-    padding: 1rem 3rem;
-    border: 1px red solid;
-  }
-  .double-bed-option-wrapper {
-    background-color: $dark-gray;
-    border-radius: 5rem;
-    padding: 1rem 3rem;
+    cursor: pointer;
+    .single-bed-option,
+    .non-smoking-option{
+      background-color: $accent-color-dark;
+      border-radius: 5rem;
+      padding: 1rem 3rem;
+    }
+    .double-bed-option,
+    .smoking-option {
+      background-color: $dark-gray;
+      border-radius: 5rem;
+      padding: 1rem 3rem;
+    }
   }
 }
 
@@ -102,7 +110,7 @@ h1 {
   }
   .button-wrapper {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     .confirm-booking-button {
       background: $accent-color-dark;

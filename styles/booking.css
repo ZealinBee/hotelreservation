@@ -48,22 +48,30 @@ h1 {
   align-self: center;
 }
 
-.option-selectors {
+.option-selector-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.option-selector-wrapper .option-selectors {
+  margin: 0 1rem;
   position: relative;
   display: flex;
   background-color: #6EA59B;
   justify-content: space-between;
-  width: 300px;
+  width: 270px;
   border-radius: 5rem;
   cursor: pointer;
 }
-.option-selectors .single-bed-option-wrapper {
+.option-selector-wrapper .option-selectors .single-bed-option,
+.option-selector-wrapper .option-selectors .non-smoking-option {
   background-color: #6EA59B;
   border-radius: 5rem;
   padding: 1rem 3rem;
-  border: 1px red solid;
 }
-.option-selectors .double-bed-option-wrapper {
+.option-selector-wrapper .option-selectors .double-bed-option,
+.option-selector-wrapper .option-selectors .smoking-option {
   background-color: #D9D9D9;
   border-radius: 5rem;
   padding: 1rem 3rem;
