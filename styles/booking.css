@@ -58,23 +58,25 @@ h1 {
   margin: 0 1rem;
   position: relative;
   display: flex;
-  background-color: #6EA59B;
+  background-color: #D9D9D9;
   justify-content: space-between;
   width: 270px;
   border-radius: 5rem;
   cursor: pointer;
 }
 .option-selector-wrapper .option-selectors .single-bed-option,
-.option-selector-wrapper .option-selectors .non-smoking-option {
-  background-color: #6EA59B;
-  border-radius: 5rem;
-  padding: 1rem 3rem;
-}
+.option-selector-wrapper .option-selectors .non-smoking-option,
 .option-selector-wrapper .option-selectors .double-bed-option,
 .option-selector-wrapper .option-selectors .smoking-option {
-  background-color: #D9D9D9;
   border-radius: 5rem;
   padding: 1rem 3rem;
+  cursor: pointer;
+}
+.option-selector-wrapper .option-selectors input[type=radio] {
+  display: none;
+}
+.option-selector-wrapper .option-selectors input[type=radio]:checked + label {
+  background-color: #6EA59B;
 }
 
 .personal-details {

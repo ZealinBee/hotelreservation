@@ -48,6 +48,18 @@ main .booking-information {
   display: flex;
   flex-direction: column;
 }
+main .booking-information .booking-date button {
+  background-color: #E0CA7B;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+main .booking-information .booking-date button img {
+  width: 40px;
+  margin-right: 1rem;
+}
 main .booking-information .booking-customer-details {
   display: flex;
   gap: 9rem;
@@ -63,4 +75,25 @@ main .booking-information .booking-room-details {
   justify-content: center;
   margin-top: 4em;
   padding-left: 3rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+@media (max-width: 800px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main h3 {
+    font-size: 1rem;
+  }
+  main .booking-information .booking-customer-details {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .booking-information .booking-room-details {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

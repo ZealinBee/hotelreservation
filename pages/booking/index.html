@@ -13,6 +13,8 @@
       href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="../../images/logo.svg" />
+
   </head>
   <body>
     <div class="background">
@@ -22,6 +24,7 @@
     <nav>
       <a href="../../index.html"><h2 class="logo">ViVas Hotel</h2></a>
     </nav>
+
     <form action="submit" class="room-type-form">
         <h1>Book Your Room</h1>
         <div class="date">
@@ -32,27 +35,29 @@
                 <input id="check-in-date" type="date"></input>
                 <input id="check-out-date" type="date" >
             </div>
-           
         </div>
         <div class="option-selector-wrapper">
           <div class="option-selectors">
-            <div class="single-bed-option">
-                <img src="../../images/single-bed.png" alt="" id="single-bed-option">
-            </div>
-            <div class="double-bed-option">
-                <img src="../../images/double-bed.png" alt="" id="double-bed-option">
-            </div>
-        </div>
+            <input type="radio" name="bed-type" value="single-bed-option" id="single-bed-option" checked>
+            <label class="single-bed-option" for="single-bed-option">
+                <img src="../../images/single-bed.png" alt="single-bed-option" >
+            </label>
+            <input type="radio" name="bed-type" value="double-bed-option" id="double-bed-option">
+            <label class="double-bed-option" for="double-bed-option">
+                <img src="../../images/double-bed.png" alt="double-bed-option" >
+            </label>
+          </div>
         <div class="option-selectors">
-            <div class="non-smoking-option">
-                <img src="../../images/non-smoking.png" alt="" id="single-bed-option">
-            </div>
-            <div class="smoking-option">
-                <img src="../../images/smoking.png" alt="" id="double-bed-option">
-            </div>
+          <input type="radio" name="smoking-or-non-smoking" value="non-smoking-option" id="non-smoking-option" checked>
+            <label class="non-smoking-option" for="non-smoking-option">
+                <img src="../../images/non-smoking.png" alt="non-smoking-option">
+            </label>
+            <input type="radio" name="smoking-or-non-smoking" value="smoking-option" id="smoking-option">
+            <label class="smoking-option" for="smoking-option">
+                <img src="../../images/smoking.png" alt="smoking-option" id="double-bed-option">
+            </label>
         </div>
         </div>
-       
       </form>
     <section class="personal-details">
       <h2>Personal Information</h2>
