@@ -14,7 +14,6 @@
       crossorigin="anonymous"
     />
     <link rel="icon" href="../../images/logo.svg" />
-
   </head>
   <body>
     <div class="background">
@@ -32,8 +31,8 @@
             <div class="date-grid">
                 <h3>Check In</h3>
                 <h3>Check Out</h3>
-                <input id="check-in-date" type="date"></input>
-                <input id="check-out-date" type="date" >
+                <input id="check-in-date" type="date" name="check-in-date"></input>
+                <input id="check-out-date" type="date" name="check-out-date" >
             </div>
         </div>
         <div class="option-selector-wrapper">
@@ -54,14 +53,14 @@
             </label>
             <input type="radio" name="smoking-or-non-smoking" value="smoking-option" id="smoking-option">
             <label class="smoking-option" for="smoking-option">
-                <img src="../../images/smoking.png" alt="smoking-option" id="double-bed-option">
+                <img src="../../images/smoking.png" alt="smoking-option" >
             </label>
         </div>
         </div>
-      </form>
+   
     <section class="personal-details">
       <h2>Personal Information</h2>
-      <form action="" class="personal-details-form">
+      <div class="personal-details-form">
         <div class="personal-detail first-name">
           <label for="first-name">First name</label>
           <input type="text" id="first-name" />
@@ -72,7 +71,7 @@
         </div>
         <div class="personal-detail phone-number">
           <label for="phone-number">Phone Number</label>
-          <input type="number" id="phone-number" />
+          <input type="tel" id="phone-number" />
         </div>
         <div class="personal-detail e-mail">
           <label for="e-mail">E-mail</label>
@@ -82,6 +81,7 @@
           <label for="referral-code">Referral Code</label>
           <input type="text" id="referral-code" />
         </div>
+      </div>
       </form>
       <div class="button-wrapper">
        <a href="../information/index.html" class="confirm-booking"><button>
@@ -89,5 +89,8 @@
        </button> </a> 
       </div>
     </section>
+    
+
+  
   </body>
 </html>
