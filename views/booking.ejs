@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivas Hotel</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/otherpage.css" />
+    <link rel="stylesheet" href="styles/booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/img/logo.svg" />
+  </head>
+  <body>
+    <div class="background">
+      <img src="/img/bed-background.png" alt="" />
+      <div class="background-overlay"></div>
+    </div>
+    <nav>
+      <a href="index.ejs"><h2 class="logo">ViVas Hotel</h2></a>
+    </nav>
+
+    <form action="/booking/createBooking" class="room-type-form" method="POST">
+          <h1>Book Your Room</h1>
+          <div class="date">
+              <i class="fa-light fa-calendar-days calendar-icon"></i>        
+              <div class="date-grid">
+                  <h3>Check In</h3>
+                  <h3>Check Out</h3>
+                  <input id="check-in-date" type="date" name="checkInDate"></input>
+                  <input id="check-out-date" type="date" name="checkOutDate">
+              </div>
+          </div>
+          <div class="option-selector-wrapper">
+            <div class="option-selectors">
+              <input type="radio" name="bedType" value="single-bed-option" id="single-bed-option" checked>
+              <label class="single-bed-option" for="single-bed-option">
+                  <img src="/img/single-bed.png" alt="single-bed-option" >
+              </label>
+              <input type="radio" name="bedType" value="double-bed-option" id="double-bed-option" >
+              <label class="double-bed-option" for="double-bed-option">
+                  <img src="/img/double-bed.png" alt="double-bed-option" >
+              </label>
+            </div>
+            <div class="option-selectors">
+                <input type="radio" name="smokingAllowed" value="true" id="non-smoking-option" checked>
+                <label class="non-smoking-option" for="non-smoking-option">
+                    <img src="/img/non-smoking.png" alt="non-smoking-option">
+                </label>
+                <input type="radio" name="smokingAllowed" value="false" id="smoking-option">
+                <label class="smoking-option" for="smoking-option">
+                    <img src="/img/smoking.png" alt="smoking-option" >
+                </label>
+            </div>
+          </div>
+    
+      <section class="personal-details">
+        <h2>Personal Information</h2>
+        <div class="personal-details-form">
+          <div class="personal-detail first-name">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="firstName" />
+          </div>
+          <div class="personal-detail last-name">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="lastName" />
+          </div>
+          <div class="personal-detail phone-number">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phoneNumber" />
+          </div>
+          <div class="personal-detail e-mail">
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail" name="email" />
+          </div>
+          <div class="personal-detail referral-code">
+            <label for="referral-code">Referral Code</label>
+            <input type="text" id="referral-code" name="referralCode" />
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <a href="" class="confirm-booking"><button>
+          Confirm Booking
+          </button> </a> 
+        </div>
+
+      </form>
+      
+    </section>
+    
+
+  <script src="js/script.js" defer></script>
+  </body>
+</html>

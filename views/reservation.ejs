@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivas Hotel</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/otherpage.css" />
+    <link rel="stylesheet" href="/styles/information.css" />
+    <link rel="icon" href="/img/logo.svg" />
+
+  </head>
+  <body>
+    <nav>
+      <a href=""><h2 class="logo">ViVas Hotel</h2></a>
+    </nav>
+
+    <main>
+      <h1>Great, <span><%= booking.firstName %>!</span> Everything is Ready!</h1>
+      <div class="booking-information">
+        <h3>Your Information</h3>
+        <div class="booking-date">
+         <button>
+            <img src="/img/calendar.png" alt="">
+            <span><%= booking.checkIn.getDate()%>.<%= booking.checkIn.getMonth()%>.<%= booking.checkIn.getFullYear()%> -  <%= booking.checkOut.getDate()%>.<%= booking.checkOut.getMonth()%>.<%= booking.checkIn.getFullYear()%></span>
+         </button>
+        </div>
+        <div class="booking-information-details">
+          <div class="booking-customer-details">
+            <div class="booking-name customer-details">
+              <div class="circle"></div>
+              <h4><%= booking.firstName %></h4>
+            </div>
+            <div class="booking-phone-number customer-details">
+              <div class="circle"></div>
+              <h4><%= booking.phoneNumber %></h4>
+            </div>
+            <div class="booking-email customer-details">
+              <div class="circle"></div>
+              <h4><%= booking.email %></h4>
+            </div>
+          </div>
+          <div class="booking-room-details">
+            <div class="booking-room-type room-details">
+              <div class="circle"><img src="/img/single-bed.png" alt=""></div>
+              <% if(booking.bedType=="single-bed-option"){ %>
+                <h4> Single room </h4>
+                <% } else{ %>
+                <h4> Double room </h4>
+                <% } %>
+            </div>
+            <div class="booking-smoke-option room-details">
+              <div class="circle"><img src="/img/non-smoking.png" alt=""></div>
+              <% if(booking.smokeAllowed){ %>
+              <h4> Smoking room </h4>
+              <% } else{ %>
+              <h4> Non-smoking room </h4>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      
+    </footer>
+  </body>
+</html>
