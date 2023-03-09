@@ -145,10 +145,6 @@ body {
   color: rgba(255, 255, 255, 0.52);
   text-align: center;
 }
-.container-check-reservation .check-reservation-input input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.52);
-  text-align: center;
-}
 .container-check-reservation .check-reservation-input input::placeholder {
   color: rgba(255, 255, 255, 0.52);
   text-align: center;

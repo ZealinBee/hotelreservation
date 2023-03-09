@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/styles/otherpage.css" />
     <link rel="stylesheet" href="/styles/information.css" />
     <link rel="icon" href="/img/logo.svg" />
-
   </head>
   <body>
     <nav>
@@ -17,45 +16,59 @@
     </nav>
 
     <main>
-      <h1>Great, <span><%= booking.firstName %>!</span> Everything is Ready!</h1>
+      <h1>
+        Great, <span><%= booking.firstName %>!</span> Everything is Ready!
+      </h1>
       <div class="booking-information">
         <h3>Your Information</h3>
         <div class="booking-date">
-         <button>
-            <img src="/img/calendar.png" alt="">
-            <span><%= booking.checkIn.getDate()%>.<%= booking.checkIn.getMonth()%>.<%= booking.checkIn.getFullYear()%> -  <%= booking.checkOut.getDate()%>.<%= booking.checkOut.getMonth()%>.<%= booking.checkIn.getFullYear()%></span>
-         </button>
+          <button>
+            <img src="/img/calendar.png" alt="calendar" />
+            <span
+              ><%= booking.checkIn.getDate()%>.<%=
+              booking.checkIn.getMonth()%>.<%= booking.checkIn.getFullYear()%> -
+              <%= booking.checkOut.getDate()%>.<%=
+              booking.checkOut.getMonth()%>.<%=
+              booking.checkIn.getFullYear()%></span
+            >
+          </button>
         </div>
         <div class="booking-information-details">
           <div class="booking-customer-details">
             <div class="booking-name customer-details">
-              <div class="circle"></div>
+              <div class="circle">
+                <img src="/img/user.png" alt="calendar" />
+              </div>
               <h4><%= booking.firstName %></h4>
             </div>
             <div class="booking-phone-number customer-details">
-              <div class="circle"></div>
+              <div class="circle"><img src="/img/phone.png" alt="calendar" /></div>
               <h4><%= booking.phoneNumber %></h4>
             </div>
             <div class="booking-email customer-details">
-              <div class="circle"></div>
+              <div class="circle"><img src="/img/mail.png" alt="calendar" /></div>
               <h4><%= booking.email %></h4>
             </div>
           </div>
           <div class="booking-room-details">
             <div class="booking-room-type room-details">
-              <div class="circle"><img src="/img/single-bed.png" alt=""></div>
+              <div class="circle">
+                <img src="/img/single-bed.png" alt="smoking-image" />
+              </div>
               <% if(booking.bedType=="single-bed-option"){ %>
-                <h4> Single room </h4>
-                <% } else{ %>
-                <h4> Double room </h4>
-                <% } %>
+              <h4>Single room</h4>
+              <% } else{ %>
+              <h4>Double room</h4>
+              <% } %>
             </div>
             <div class="booking-smoke-option room-details">
-              <div class="circle"><img src="/img/non-smoking.png" alt=""></div>
+              <div class="circle">
+                <img src="/img/non-smoking.png" alt="non-smoking-image" />
+              </div>
               <% if(booking.smokeAllowed){ %>
-              <h4> Smoking room </h4>
+              <h4>Smoking room</h4>
               <% } else{ %>
-              <h4> Non-smoking room </h4>
+              <h4>Non-smoking room</h4>
               <% } %>
             </div>
           </div>
@@ -63,8 +76,6 @@
       </div>
     </main>
 
-    <footer>
-      
-    </footer>
+    <footer></footer>
   </body>
 </html>

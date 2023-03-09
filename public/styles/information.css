@@ -78,7 +78,10 @@ main .booking-information .booking-room-details {
 }
 
 footer {
-  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-top: 0;
 }
 
 @media (max-width: 800px) {
